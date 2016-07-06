@@ -10,9 +10,9 @@
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        templateUrl: 'app/directory/directory.html',
+        controller: 'DirectoryController',
+        controllerAs: 'directory'
       })
       .state('directory', {
         url: '/directory',
