@@ -1,0 +1,31 @@
+<div class="container-fluid">
+
+  <div>
+    <acme-navbar></acme-navbar>
+  </div>
+
+  <div class="jumbotron text-center">
+    <h1></h1>
+    <p class="lead">
+      <img src="assets/images/alexa.png" alt=""><br>
+      Geekwise Academy Amazon Alexa Skills Course
+    </p>
+    <!--<p class="animated infinite" ng-class="main.classAnimation">-->
+      <!--<button type="button" class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</button>-->
+    <!--</p>-->
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat="blogArticle in main.blogArticles | orderBy:'rank'">
+      <div class="thumbnail">
+        <img class="pull-right" ng-src="assets/images/{{ blogArticle.logo }}" alt="{{ blogArticle.title }}">
+        <div class="caption">
+          <h3>{{ blogArticle.title }}</h3>
+          <p>{{ blogArticle.description }}</p>
+          <p><a ng-href="{{blogArticle.url}}">{{ blogArticle.url }}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

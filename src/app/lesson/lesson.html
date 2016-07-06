@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div>
+    <acme-navbar></acme-navbar>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-offset-1 col-md-10 col-sm-12">
+        <h3>{{lesson.title}}</h3>
+      </div>
+      <div class="col-md-offset-2 col-md-8 col-sm-12">
+        {{lesson.description}}
+      </div>
+      <div class="col-md-10 col-md-offset-2">
+        <div marked class="caption" ng-include=lesson.md>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
