@@ -38,11 +38,14 @@ From your input you will probably be taken to another `Intent` or possibly even 
 In order to actually use custom skills, you will need to send a Application ID along with every request to the servers.
 Down below we will see that every time a function is called it is passed through a `handler`. This Application ID is placed in the session.
 
-
-
+A skill is essentially a set of callbacks that send json back and forth between a server and the Alexa enabled device.
 
 #### Step by Step
 
+1. To start developing a skill you will need to log into your AWS account that you created on the first day. 
+2. Click on the lambda section on the homepage.
+3. On the nxt screen create a Lambda function.
+4. 
 
 #### Example Skill from AWS Lambda
 
