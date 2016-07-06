@@ -40,12 +40,7 @@ Down below we will see that every time a function is called it is passed through
 
 A skill is essentially a set of callbacks that send json back and forth between a server and the Alexa enabled device.
 
-#### Step by Step
 
-1. To start developing a skill you will need to log into your AWS account that you created on the first day. 
-2. Click on the lambda section on the homepage.
-3. On the nxt screen create a Lambda function.
-4. 
 
 #### Example Skill from AWS Lambda
 
@@ -271,3 +266,17 @@ function buildResponse(sessionAttributes, speechletResponse) {
 }
 ```
 
+#### Step by Step
+
+1. To start developing a skill you will need to log into your AWS account that you created on the first day. 
+2. Click on the lambda section on the homepage.
+3. On the nxt screen create a Lambda function.
+4. On the next screen you will be able to pick which type of boilerplate you want to start with. For the majority of the skills we make in this course we will be using the Alexa Node boilerplate.
+5. You will see a big blob of nodejs code that you can edit.
+6. If there are any changes you want to make, you can make them now in the code editor window.
+7. To be able to proceed you will have to set a `Role` for the function. you can select just the default `Basic execution role`. If you were hosting on S3 you would need to select the S3 option.
+8. On the next screen you will just need to hit `Create Function`.
+
+##### Now this is where the fun starts
+9. Log into your [Amazon Developer Portal Account](https://developer.amazon.com/) and click on the Alexa Button
+10. You will be presented with 2 options, for now click on the `Alexa Skills Kit` button.
