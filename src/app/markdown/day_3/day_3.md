@@ -324,3 +324,5 @@ You will need to select your `ARN` which is available from the AWS Lambda portal
 
 
 ### Brainstorming
+* What functionality would you like to add to Alexa?
+* What tools will you need to make that possible?
