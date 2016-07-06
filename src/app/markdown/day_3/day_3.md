@@ -20,6 +20,10 @@ in Skill development this shoudln't be your first reaction. In most cases, when 
 you will want to keep everything in as few files as possible. This is because on AWS Lambda you are charged for the amount of space 
 that you use and the size of your Lambda function.
 
+#### Key Components of a Skill
+- Card - A card is what will display in the users Alexa App on their smartphone or tablet.
+- Response - These are typically used for the device to tell you the results of a query or perform some specific action.
+- Request - When you ask Alexa something a `request` is sent to the Amazon servers that are carrying your data or your sentences.
 
 #### High Level Overview
 
@@ -30,6 +34,10 @@ in most cases this is considered the `LaunchIntent` or the intent that is trigge
 From your input you will probably be taken to another `Intent` or possibly even some sort of `EndSessionIntent`.
 
 #### Low Level Overview
+
+In order to actually use custom skills, you will need to send a Application ID along with every request to the servers.
+Down below we will see that every time a function is called it is passed through a `handler`. This Application ID is placed in the session.
+
 
 
 
