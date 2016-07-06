@@ -1,4 +1,4 @@
-## Day 1 - The Headless Browser and a Little Bit of A.I.
+## The Headless Browser and a Little Bit of A.I.
 
 ### Objectives
 * We will be touching bases on C.R.U.D. operations with Node and simple json
