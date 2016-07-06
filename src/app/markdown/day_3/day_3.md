@@ -276,7 +276,51 @@ function buildResponse(sessionAttributes, speechletResponse) {
 6. If there are any changes you want to make, you can make them now in the code editor window.
 7. To be able to proceed you will have to set a `Role` for the function. you can select just the default `Basic execution role`. If you were hosting on S3 you would need to select the S3 option.
 8. On the next screen you will just need to hit `Create Function`.
-
 ##### Now this is where the fun starts
 9. Log into your [Amazon Developer Portal Account](https://developer.amazon.com/) and click on the Alexa Button
 10. You will be presented with 2 options, for now click on the `Alexa Skills Kit` button.
+11. You will need to click `Add a New SKill` button in the top right corner. This will walk you through the process of setting up the skill you created in Lambda.
+12. Give the skill a name
+13. Give the skill an Invocation Name, this has to be less than 3 words with no special characters. Remember you have to be able to call this Invocation Name to start the skill.
+14. You can think of the Intent Schema as what maps Skill functions to your interaction models, and database slots.
+##### Basic setup looks like this
+        {
+          "intents": [
+            {
+              "intent": "GetHoroscope",
+              "slots": [
+                {
+                  "name": "Sign",
+                  "type": "LIST_OF_SIGNS"
+                },
+                {
+                  "name": "Date",
+                  "type": "AMAZON.DATE"
+                }
+              ]
+            },
+            {
+              "intent": "GetLuckyNumbers"
+            }
+          ]
+        }
+15. Next you will add a Custom Slot, a Custom Slot is just a list of loose inputs that will be used within the skill to store data, or match data.
+In some cases you want a wide variety because they will allow more flexibility within the skill.
+        LIST_OF_SIGNS
+            Aries
+            Monkey
+            Pizza
+            Signless
+16. The next major piece of information that needs to be inserted is the `Sample Utterances`. This is basically the sentences that the user will be able to say to interact with the Skill intents.
+        SampleIntent            what should I say?
+        GetInformationIntent    what is the {Sign}
+Notice in the above box that we can say the sentence `what should I say?` which will be handled by the SampleIntent, please note that these Intents are just meant for demonstration.
+You can also note that the `GetInformationIntent` has a sentence which is followed by `{Sign}` which is a placeholder for the slot. This will refer to anything that is in the Custom Slots section.
+17. The next major step and close to the last step is to configure the skill to point to where our code is being hosted on AWS Lambda. Do this by first selecting `Lambda ARN`. 
+You will need to select your `ARN` which is available from the AWS Lambda portal where you setup your code. It will be in the top right corner.
+18. The next option on the screen is titled `Account Linking`. For now just click the `No` option.
+19. Now you can test in the next screen, or try it out on your device!
+
+
+
+### Brainstorming
