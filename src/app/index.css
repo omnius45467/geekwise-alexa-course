@@ -7783,6 +7783,12 @@ a:hover, a:focus {
 a {
   color: black;
 }
+.nav a {
+  color:black;
+}
+li a, p a {
+  color:#009AD4;
+}
 
 h1 {
   font-size: 2em;
