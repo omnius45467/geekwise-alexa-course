@@ -33,14 +33,44 @@ Depending on how you wrote your skill you might be presented with some type of q
 in most cases this is considered the `LaunchIntent` or the intent that is triggered when the skill is launched. 
 From your input you will probably be taken to another `Intent` or possibly even some sort of `EndSessionIntent`.
 
-#### Low Level Overview
-
 In order to actually use custom skills, you will need to send a Application ID along with every request to the servers.
 Down below we will see that every time a function is called it is passed through a `handler`. This Application ID is placed in the session.
 
 A skill is essentially a set of callbacks that send json back and forth between a server and the Alexa enabled device.
 
+From a high level perspective your requests and responses will be passed through a callback which will look similar to this
 
+```
+function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
+    return {
+        outputSpeech: {
+            type: "PlainText",
+            text: output
+        },
+        card: {
+            type: "Simple",
+            title: "SessionSpeechlet - " + title,
+            content: "SessionSpeechlet - " + output
+        },
+        reprompt: {
+            outputSpeech: {
+                type: "PlainText",
+                text: repromptText
+            }
+        },
+        shouldEndSession: shouldEndSession
+    };
+}
+
+function buildResponse(sessionAttributes, speechletResponse) {
+    return {
+        version: "1.0",
+        sessionAttributes: sessionAttributes,
+        response: speechletResponse
+    };
+}
+
+```
 
 #### Example Skill from AWS Lambda
 

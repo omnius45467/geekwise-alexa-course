@@ -1,6 +1,5 @@
 * Anatomy of a Skill
-    * High level overview
-    * Low level overview
+    * Overview 
 * Understanding the examples from AWS
     * Step by step guide through the basic skill
 * Tailoring the Example
