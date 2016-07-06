@@ -66,13 +66,14 @@ If you haven't used node for a little while [this](http://www.nodebeginner.org) 
 
 The biggest take away from this short primer should be standing up a small toy server.
 
-```var http = require("http");
-   
+```
+var http = require("http");
    http.createServer(function(request, response) {
      response.writeHead(200, {"Content-Type": "text/plain"});
      response.write("Hello World");
      response.end();
-   }).listen(8888);```
+   }).listen(8888);
+```
 
 Notice there are many built in functions that we can use to our advantage
 
