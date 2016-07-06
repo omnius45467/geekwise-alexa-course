@@ -13,6 +13,8 @@ Your challenge, if you choose to accept...
 
 * Expose students to the fundamentals of developing skills for Alexa.
 * Give students the tools to build consumable Skills and publish them on the [Alexa Developer Portal](https://developer.amazon.com/edw/home.html)
+* Expose students to developing web software for things other than web browsers
+
 
 ### Installing Virtual Box and Vagrant
 
@@ -34,8 +36,6 @@ but it is very rewarding.
     * `vagrant up`
     * When you are done simply `vagrant suspend`
     * If something goes wrong you can get rid of the instance of the virtual machine by `vagrant destroy`
-    
-    
     
     
 #### Installing Dependencies
