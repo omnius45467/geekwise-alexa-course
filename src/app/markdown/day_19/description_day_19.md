@@ -1,7 +1,2 @@
-* bullet_point
-  * bullet_point
-    * bullet_point
-* bullet_point
-* bullet_point
-* bullet_point
+* Skill review and student question answer session
 

@@ -1,7 +1,4 @@
-* bullet_point
-  * bullet_point
-    * bullet_point
-* bullet_point
-* bullet_point
-* bullet_point
+* Coding through a simple example
+* Setting up Cylon to interact with the Arduino and the API
+
 

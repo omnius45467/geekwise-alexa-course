@@ -1,7 +1,2 @@
-* bullet_point
-  * bullet_point
-    * bullet_point
-* bullet_point
-* bullet_point
-* bullet_point
-
+* Finishing previous days skill
+* Further Development on Student Ideas

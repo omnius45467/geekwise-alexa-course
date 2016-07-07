@@ -1,7 +1,2 @@
-* bullet_point
-  * bullet_point
-    * bullet_point
-* bullet_point
-* bullet_point
-* bullet_point
+* Student Presentation 
 

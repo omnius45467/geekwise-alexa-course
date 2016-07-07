@@ -1,7 +1,3 @@
-* bullet_point
-  * bullet_point
-    * bullet_point
-* bullet_point
-* bullet_point
-* bullet_point
+* Finishing examples
+* Brainstorming for final projects
 
