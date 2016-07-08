@@ -1,5 +1,11 @@
 ## Introduction to [Alexa-App](https://github.com/matt-kruse/alexa-app) 
 
+### Objectives
+* Figure out how to use libraries with your code
+* Learn the different parts of the Alexa-App library
+* Use a boilerplate to setup a skill
+
+
 ```
 Alexa-app does the dirty work of interpreting the JSON request from Amazon and building the JSON response. It provides convenience methods to more easily build the response, handle session objects, and add cards. It also makes it easy to run multiple endpoints (apps) on one Node.js server instance.
 ```
@@ -12,6 +18,10 @@ functions you have in standard javascript for web programming.
 To get around this problem we will have to plan out our skills with pseudo code and make a mental map of the skill in our heads before we get into coding.
 
 We also have access to some tools given to us by Amazon. The small testing environment is incredibly useful for testing out a skill.
+
+There are a few other good support libraries that we will be touching on later, but for now our main focus is to explore this library and see how it might be beneficial to use.
+
+The coolest part about the Alexa-App library is that it is well maintained and seems self explanatory (at least to me).
 
 
 ### Simplifying Your Skills
@@ -109,8 +119,68 @@ function getColorFromSession(intent, session, callback) {
 }
 ```
 
-The code changes when we use the Alexa-App library. 
+The code changes when we use the Alexa-App library. Notice that the intent function `onIntent` doesn't have to hold a reference to ever single intent that we want to run.
+
+```
+app.intent('number',
+  {
+    "slots":{"number":"NUMBER"}
+    ,"utterances":[ "say the number {1-100|number}" ]
+  },
+  function(request,response) {
+    var number = request.slot('number');
+    response.say("You asked for the number "+number);
+  }
+);
 
 ```
 
+In the intent function your first parameter is the name of the `intent`. 
+In the above example `app` is a reference to the instance of the Alexa-App library. 
+The next parameter is the javascript object that that we use to pass through to our Intent Schemas and our Sample Utterances, these are optional though 
+I usually leave them in to remind myself what the interface will look like for when I'm developing both the Sample Utterances and the Intent Schemas.
+
+### Stand Out Features of the Library
+
+* Most of the work that we have been doing with sessions are handled from behind the scenes. 
+* Requests can directly handle saving voice input to the session. This is _crazy beneficial_ because that means that we 
+don't have to worry about storing it in the session, it is taken care of behind the scenes.
+* Responses have a similar benefit when you use this library. 
+* It is slightly easier to manage scope.
+
+### Types of Responses
+
+Alexa can handle a couple of different types of responses. The main response that you will probably be using when developing 
+your skills is the `response.say()` this function accepts a string. This string will be converted to speech. 
+
+We also have access to `response.card()` which accepts an object. 
+There are a few options that help when developing.
+
+1. The most basic is the `simple` card when will just display text 
+``` 
+response.card({
+  type:    "Simple",
+  title:   "My Cool Card",  //this is not required for type Simple
+  content: "This is the\ncontent of my card"
+});
 ```
+
+2. We also have access to a `standard` card that allows us to use text as well as images
+```
+response.card({
+  type: "Standard",
+  title: "My Cool Card",  //this is not required for type Simple OR Standard
+  text:  "Your ride is on the way to 123 Main Street!\nEstimated cost for this ride: $25",
+  image: {                //image is optional
+    smallImageUrl: "https://carfu.com/resources/card-images/race-car-small.png",  //One must be specified
+    largeImageUrl: "https://carfu.com/resources/card-images/race-car-large.png"
+  }
+});
+```
+3. As stated above we have the ability to pass strings that we want spoken into the
+```
+response.say('string');
+```
+
+4. One of the most useful response types that we have access to is the `response.linkAccount()`, we will explore this later.
+
