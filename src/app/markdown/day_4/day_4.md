@@ -195,3 +195,8 @@ By default the session will end after an intent performs its actions. If you wan
 continue to use the skill, you will have to send something like `response.shouldEndSession(false)`.
 
 You have access to more response types and they are available for you to use, you can find them listed on the [Alexa-App](https://github.com/matt-kruse/alexa-app)  documentation.
+
+
+### Working through an Alexa-App Example
+
+...
