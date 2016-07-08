@@ -144,7 +144,7 @@ I usually leave them in to remind myself what the interface will look like for w
 
 * Most of the work that we have been doing with sessions are handled from behind the scenes. 
 * Requests can directly handle saving voice input to the session. This is _crazy beneficial_ because that means that we 
-don't have to worry about storing it in the session, it is taken care of behind the scenes.
+don't have to worry about storing it in the session (unless you want to), it is taken care of behind the scenes.
 * Responses have a similar benefit when you use this library. 
 * It is slightly easier to manage scope.
 
@@ -169,7 +169,7 @@ response.card({
 ```
 response.card({
   type: "Standard",
-  title: "My Cool Card",  //this is not required for type Simple OR Standard
+  title: "My Cool Card", 
   text:  "Your ride is on the way to 123 Main Street!\nEstimated cost for this ride: $25",
   image: {                //image is optional
     smallImageUrl: "https://carfu.com/resources/card-images/race-car-small.png",  //One must be specified
@@ -184,3 +184,14 @@ response.say('string');
 
 4. One of the most useful response types that we have access to is the `response.linkAccount()`, we will explore this later.
 
+5. Another really important response type that will come in handy is the `response.reprompt()`, just like the say function 
+
+6. Even though, for most use cases you won't have to worry about sessions you can still access session information 
+
+7. `response.clear()` will flush the session of speech input.
+
+8. `response.shouldEndSession()` will take a boolean value to either end the session or continue the session. 
+By default the session will end after an intent performs its actions. If you wanted the user to be able to 
+continue to use the skill, you will have to send something like `response.shouldEndSession(false)`.
+
+You have access to more response types and they are available for you to use, you can find them listed on the [Alexa-App](https://github.com/matt-kruse/alexa-app)  documentation.
