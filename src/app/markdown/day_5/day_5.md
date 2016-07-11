@@ -139,3 +139,18 @@ Basically this works by passing options into a callback. The response that we ge
 From here we have access to a ton of different information that might be useful for the end user.
 Our goal as developers is to find out what the user might be looking for and find a systematic way to parse this 
 incoming data, only sharing the data that is relevant.
+
+1. If you haven't already cloned the [boilerplate](https://github.com/sammyboy45467/AlexaBoilerplate) that we have been using. 
+And install the library listed above.
+
+2. Let's setup a test file to make sure we can ping the itunes servers.
+
+3. Let's write a welcome intent
+
+4. Let's put in some basic error handling.
+
+5. Let's create a couple different options for the users.
+
+6. Let's test it with out devices.
+
+7. How can we improve this?
