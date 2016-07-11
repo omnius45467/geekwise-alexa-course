@@ -102,3 +102,14 @@ Here's a sample...
 ```
 
 Notice I tried to cover a lot of different use cases. You can modify them as you wish, these are mainly for demonstration purposes.
+
+
+5. The next big thing that we need to do is zip up the package and send it over to lambda.
+Remember the command to do this? `grunt lambda_package`. We will also need to setup the lambda function to prepare for this. 
+Go to your Lambda account and create a new function.
+
+6. Now we will setup the skill itself in the Amazon Developer Portal. 
+
+If step `5` and `6` seem a little obscure check back on day `3` for the walk through. But remember this time we will be uploading a zip file of our code.
+
+
