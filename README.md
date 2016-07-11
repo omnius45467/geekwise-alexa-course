@@ -9,5 +9,9 @@ If you have a comment or a suggestion feel free to submit an issue.
 ##Contact Information
 
 [twitter](https://twitter.com/sammyboy45467)
+
+
 [linkedIn](https://www.linkedin.com/in/jeremy-robles-62268792)
+
+
 [jrobles@bitwiseindustries.com](mailto:jrobles@bitwiseindustries.com)
