@@ -44,4 +44,33 @@ app.intent('GuestIntent', {}, function(request, response){
     }
 });
 ```
+Before we move onto the next step, lets take a deeper look at this intent. We won't be testing it out till later, 
+but if you want to you can run some tests on your own. 
+
+Can you foresee any points of failure? Would it make more sense to have a switch case?
+
+3. The last intent that I want to point out is something I typically have in my skills even though there are functions to handle this. 
+It is the `EndIntent`.
+```
+app.intent('EndIntent',
+	{
+    	'utterances':[
+    		'end', 'cancel', 'stop'
+    	]
+  	},
+	function(request,response) {
+		setTimeout(function() {		// simulate an async request
+
+	        // This is async and will run after a brief delay
+	        response.say('alright');
+
+	        // Must call send to end the original request
+	        response.send();
+
+		}, 250);
+
+	    // Return false immediately so alexa-app doesn't send the response
+	    return false;
+});
+```
 
