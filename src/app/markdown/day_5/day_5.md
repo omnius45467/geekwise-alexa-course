@@ -49,15 +49,12 @@ but if you want to you can run some tests on your own.
 
 Can you foresee any points of failure? Would it make more sense to have a switch case?
 
-3. The last intent that I want to point out is something I typically have in my skills even though there are functions to handle this. 
-It is the `EndIntent`.
+3. The last intent that I want to point out is something I typically have in my skills even though there are functions 
+to handle this. It is the `EndIntent`. This will basically stop the skill when a user gives the command.
+
 ```
 app.intent('EndIntent',
-	{
-    	'utterances':[
-    		'end', 'cancel', 'stop'
-    	]
-  	},
+	{},
 	function(request,response) {
 		setTimeout(function() {		// simulate an async request
 
@@ -72,5 +69,36 @@ app.intent('EndIntent',
 	    // Return false immediately so alexa-app doesn't send the response
 	    return false;
 });
+
 ```
 
+4. If you notice above the second parameter being passed into the system is an empty object. Like I mentioned in previous 
+lessons, this is where you can insert your `Sample Utterances` and `Slots`. 
+
+Here's a sample...
+```
+  {
+    'slots':{'Guest':'LIST_OF_GUESTS'},
+    'utterances':[
+		'{Guest} {Guest} and {Guest}',
+		'{Guest}',
+		'{Guest} and {Guest}',
+		'{Guest} and his family',
+		'{Guest} and her family',
+		'{Guest} and his boyfriend',
+		'{Guest} and her boyfriend',
+		'{Guest} and his girlfriend',
+		'{Guest} and her girlfriend',
+		'{Guest} and his wife',
+		'{Guest} and her wife',
+		'{Guest} and his husband',
+		'{Guest} and her husband',
+		'{Guest} and his friends',
+		'{Guest} and her friends',
+		'{Guest} and friends'
+
+	]
+  }
+```
+
+Notice I tried to cover a lot of different use cases. You can modify them as you wish, these are mainly for demonstration purposes.
