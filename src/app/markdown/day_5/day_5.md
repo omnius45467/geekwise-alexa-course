@@ -44,16 +44,16 @@ app.intent('GuestIntent', {}, function(request, response){
     }
 });
 ```
-Before we move onto the next step, lets take a deeper look at this intent. We won't be testing it out till later, 
-but if you want to you can run some tests on your own. 
+    Before we move onto the next step, lets take a deeper look at this intent. We won't be testing it out till later, 
+    but if you want to you can run some tests on your own. 
 
-Can you foresee any points of failure? Would it make more sense to have a switch case?
+    Can you foresee any points of failure? Would it make more sense to have a switch case?
 
 3. The last intent that I want to point out is something I typically have in my skills even though there are functions 
 to handle this. It is the `EndIntent`. This will basically stop the skill when a user gives the command.
 
-```
-app.intent('EndIntent',
+    ```
+    app.intent('EndIntent',
 	{},
 	function(request,response) {
 		setTimeout(function() {		// simulate an async request
@@ -68,16 +68,16 @@ app.intent('EndIntent',
 
 	    // Return false immediately so alexa-app doesn't send the response
 	    return false;
-});
+    });
 
-```
+    ```
 
 4. If you notice above the second parameter being passed into the system is an empty object. Like I mentioned in previous 
 lessons, this is where you can insert your `Sample Utterances` and `Slots`. 
 
-Here's a sample...
-```
-  {
+    Here's a sample...
+    ```
+    {
     'slots':{'Guest':'LIST_OF_GUESTS'},
     'utterances':[
 		'{Guest} {Guest} and {Guest}',
@@ -96,20 +96,46 @@ Here's a sample...
 		'{Guest} and his friends',
 		'{Guest} and her friends',
 		'{Guest} and friends'
+	    ]
+    }
+    ```
 
-	]
-  }
-```
-
-Notice I tried to cover a lot of different use cases. You can modify them as you wish, these are mainly for demonstration purposes.
-
-
+    Notice I tried to cover a lot of different use cases. You can modify them as you wish, these are mainly for demonstration purposes. 
+    Can you guess what the `EndIntent` utterances might look like?
 5. The next big thing that we need to do is zip up the package and send it over to lambda.
-Remember the command to do this? `grunt lambda_package`. We will also need to setup the lambda function to prepare for this. 
-Go to your Lambda account and create a new function.
+    Remember the command to do this? `grunt lambda_package`. We will also need to setup the lambda function to prepare for this. 
+    Go to your Lambda account and create a new function.
 
 6. Now we will setup the skill itself in the Amazon Developer Portal. 
 
 If step `5` and `6` seem a little obscure check back on day `3` for the walk through. But remember this time we will be uploading a zip file of our code.
 
 
+### The iTunes Search Skill
+
+I like Apple, and from time to time I don't want to have to search through everything on my computer to find a TV show. 
+So I made an Alexa Skill to do it for me. 
+This skill is rather simple. We will be using the boilerplate like above. This time we will be adding another simple node library to the skill. 
+
+#### Installing the NPM Library
+ 
+The library we will be using for this skill is the `itunes-search`. Install it by 
+`npm install itunes-search --save` that way it will be saved to your package.json file.
+
+This is an extremely simple library this is something we could code out without the use of the library, but I'm somewhat lazy. 
+If we take a look at the source code for this project. You will notice that the main portion of the library is in the file `lib/itunes.js`.
+```
+exports.search = function(options, callback) {
+   
+     var url = generateURL("http://itunes.apple.com/search?", options, {
+       country: "US"
+     });
+       
+     makeRequest(url, callback);
+};
+```
+
+Basically this works by passing options into a callback. The response that we get is the objects matching our query. 
+From here we have access to a ton of different information that might be useful for the end user.
+Our goal as developers is to find out what the user might be looking for and find a systematic way to parse this 
+incoming data, only sharing the data that is relevant.
