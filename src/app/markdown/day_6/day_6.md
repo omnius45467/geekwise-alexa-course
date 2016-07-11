@@ -1,1 +1,6 @@
-## Day 1 - Introduction to Alexa
+## More Skills
+ 
+### Objectives
+
+* Continue working on previous weeks skills.
+* 
