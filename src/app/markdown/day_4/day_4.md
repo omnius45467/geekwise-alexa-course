@@ -197,4 +197,7 @@ continue to use the skill, you will have to send something like `response.should
 You have access to more response types and they are available for you to use, you can find them listed on the [Alexa-App](https://github.com/matt-kruse/alexa-app)  documentation.
 
 
-### The plan now is to refactor your code from the last classes to use the Alexa-App Library 
+
+### Challenge
+
+* The plan now is to refactor your code from the last classes to use the Alexa-App Library 
