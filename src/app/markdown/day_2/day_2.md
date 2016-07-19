@@ -98,7 +98,3 @@ We will get into what `FillIntent`, `Partial Intent`, and `No Intent` actually m
 
 Designing voice interfaces is an art in and of itself. [This page](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-voice-design-best-practices) has some interesting details on some do's and don't.
 
-
-## Artificial Intelligence
-
-This is where things get interesting...

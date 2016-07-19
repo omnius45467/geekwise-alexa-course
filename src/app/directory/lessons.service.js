@@ -14,7 +14,7 @@ function Lessons() {
     },
     {
       id: 2,
-      title: 'Day #2 - The Headless Browser & Introduction to Artificial Intelligence',
+      title: 'Day #2 - The Headless Browser',
       md: 'app/markdown/day_2/day_2.md',
       description: 'app/markdown/day_2/description_day_2.md',
       url: 'lesson/2',
