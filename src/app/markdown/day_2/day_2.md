@@ -81,6 +81,8 @@ app.get('/tubular', function(req, res) {
   res.send('Are you a surfer?');
 });
 
+console.log('Server is alive on port 8080');
+
 app.listen(process.env.PORT || 8080);
 
 ```
@@ -98,3 +100,27 @@ We will get into what `FillIntent`, `Partial Intent`, and `No Intent` actually m
 
 Designing voice interfaces is an art in and of itself. [This page](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-voice-design-best-practices) has some interesting details on some do's and don't.
 
+### Simple CRUD Example
+
+This is a simple skill that utilizes the command line and also the browser a bit to create, read, update, and delete.
+
+We will be sending strings to the server from the terminal, or git bash.
+
+To Start we need to install `express as a dependency` spin up a node server.
+```
+npm init 
+npm install express --save
+```
+
+Like we say above in another example the way we will start this server is by creating the following code.
+```
+var express = require('express');
+var app = express();
+```
+
+Ok now lets spin this up with the following code
+```
+app.listen(3000, function() {
+  console.log('listening on 3000')
+})
+```

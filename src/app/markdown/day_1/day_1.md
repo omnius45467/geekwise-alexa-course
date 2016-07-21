@@ -26,6 +26,11 @@ Your challenge, if you choose to accept...
 The main reason we are using Virtualbox is because it will act as a equal playing field for everyone. 
 It will also act like AWS if you plan on developing other apps or services.
 
+##### Links for Resources
+* Virtual Box [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+* Vagrant [https://www.vagrantup.com/](https://www.vagrantup.com/)
+* Github Repository for the instance [https://github.com/lennycartier/nodejs-vagrantbox](https://github.com/lennycartier/nodejs-vagrantbox)
+
 Using Virtual Box might take a little while to get used to if you are used to a windows environment, 
 but it is very rewarding.
 
