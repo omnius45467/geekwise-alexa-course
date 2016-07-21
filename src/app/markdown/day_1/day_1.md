@@ -52,9 +52,11 @@ We will be installing a few dependencies
     * If you don't have node installed follow this guide
         * `curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -`
         * `sudo apt-get install -y nodejs`
-        * The next major dependency that we will need to install is [grunt](https://github.com/gruntjs/grunt)
+    * The next major dependency that we will need to install is [grunt](https://github.com/gruntjs/grunt)
         
 Like it or not much of what we will be doing with lambda and the skills is dependant on grunt. If you prefer gulp write a `gulpfile.js` for it! I'll welcome a pull request.
+
+
 
 <!--#### Setting up Grunt-->
 
