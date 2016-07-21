@@ -29,14 +29,14 @@ It will also act like AWS if you plan on developing other apps or services.
 ##### Links for Resources
 * Virtual Box [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 * Vagrant [https://www.vagrantup.com/](https://www.vagrantup.com/)
-* Github Repository for the instance [https://github.com/lennycartier/nodejs-vagrantbox](https://github.com/lennycartier/nodejs-vagrantbox)
+* Github Repository for the instance [https://github.com/lennycartier/nodejs-vagrantbox](https://github.com/sammyboy45467/Alexa_Vagrant_Environment)
 
 Using Virtual Box might take a little while to get used to if you are used to a windows environment, 
 but it is very rewarding.
 
 * Visit [this link](https://www.virtualbox.org/wiki/Downloads) to download Virtual Box.
 * You will need to install Vagrant, so you can get access to some cool tools, download it [here](https://www.vagrantup.com/)
-* Once this is installed you will need to clone a git repo that has the tools we will use [here](https://github.com/lennycartier/nodejs-vagrantbox)
+* Once this is installed you will need to clone a git repo that has the tools we will use [here](https://github.com/sammyboy45467/Alexa_Vagrant_Environment)
 * From here you will pop open a terminal or command prompt and move to your directory where you cloned the vagrant box from github
     * `vagrant up`
     * When you are done simply `vagrant suspend`
@@ -54,7 +54,18 @@ We will be installing a few dependencies
         * `sudo apt-get install -y nodejs`
         * The next major dependency that we will need to install is [grunt](https://github.com/gruntjs/grunt)
         
-Like it or not much of what we will be doing with lambda and the skills is dependant on grunt. If you prefer gulp write a `gulpfile.js` for it!
+Like it or not much of what we will be doing with lambda and the skills is dependant on grunt. If you prefer gulp write a `gulpfile.js` for it! I'll welcome a pull request.
+
+<!--#### Setting up Grunt-->
+
+<!--To setup Grunt we will use the following commands-->
+<!--`-->
+<!--npm install -g grunt grunt-cli-->
+<!--`-->
+
+<!--You may also want to-->
+
+#### Setting Up AWS on Your Vagrant Box
 
 * We will next install the [AWS CLI](https://aws.amazon.com/cli/)
     * The [Get Started Guide](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
@@ -62,7 +73,6 @@ Like it or not much of what we will be doing with lambda and the skills is depen
 * Outside of your virtual box we will need to install [Postman](https://www.getpostman.com/)
     * Postman gives us a tool that will allow us to handle requests that are sent from out skill to the Amazon Servers
     * Postman is mostly helpful when you have to debug or when you want to connect to things like robots
-    
 
 
 #### Node Primer
