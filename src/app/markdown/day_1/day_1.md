@@ -53,6 +53,7 @@ We will be installing a few dependencies
         * `curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -`
         * `sudo apt-get install -y nodejs`
     * The next major dependency that we will need to install is [grunt](https://github.com/gruntjs/grunt)
+    * Let's also check and see what the current status of the modules we already have installed by typing `npm list --depth=0`
         
 Like it or not much of what we will be doing with lambda and the skills is dependant on grunt. If you prefer gulp write a `gulpfile.js` for it! I'll welcome a pull request.
 
@@ -69,8 +70,14 @@ Like it or not much of what we will be doing with lambda and the skills is depen
 
 #### Setting Up AWS on Your Vagrant Box
 
-* We will next install the [AWS CLI](https://aws.amazon.com/cli/)
-    * The [Get Started Guide](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
+* The first thing we will need to do is install the latest version of `pip` this is a command line tool that will let us
+ interact with the python scripts the same way we do with node modules.
+    * `sudo apt-get install pip`
+    * Once that is complete we will run `pip install awscli`
+* For more information check out the [AWS CLI guide](https://aws.amazon.com/cli/) 
+* [More Information](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
+
+#### Installing Postman
     
 * Outside of your virtual box we will need to install [Postman](https://www.getpostman.com/)
     * Postman gives us a tool that will allow us to handle requests that are sent from out skill to the Amazon Servers
@@ -97,5 +104,7 @@ Notice there are many built in functions that we can use to our advantage
 In many cases for what we are going to do the "Content-Type" will be handled by some 
 pieces of code that we will be using later.
 
+If this is your first time experimenting with javascript or nodejs I'd encourage you to have a look at 
+the [Code Academy Article on javascript](https://www.codecademy.com/learn/javascript)
 
 

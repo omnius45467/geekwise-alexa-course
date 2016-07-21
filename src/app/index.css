@@ -7789,6 +7789,10 @@ a {
 }
 li a, p a {
   color:#009AD4;
+  line-height:4;
+}
+ul, li, p, a{
+  font-size:1em;
 }
 
 h1 {
