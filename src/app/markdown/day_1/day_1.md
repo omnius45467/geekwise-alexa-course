@@ -69,9 +69,12 @@ Like it or not much of what we will be doing with lambda and the skills is depen
 <!--You may also want to-->
 
 #### Setting Up AWS on Your Vagrant Box
+In order to make our development process that much easier, we will need to setup the AWS Command Line tools on our computers. The following bullet points will walk you though the best way to do that.
 
-* The first thing we will need to do is install the latest version of `pip` this is a command line tool that will let us
- interact with the python scripts the same way we do with node modules.
+* The first thing we will need to do is create an AWS account so we will be able to tie into the Alexa device and publish our skills. You can do that [here in the AWS Portal](https://aws.amazon.com/)
+	* You can setup your account with your Amazon Account
+	* You will need to setup a new access user
+* Install the latest version of `pip` this is a command line tool that will let us interact with the python scripts the same way we do with node modules.
     * `sudo apt-get install python-pip`
     * Once that is complete we will run `sudo pip install awscli`
 * For more information check out the [AWS CLI guide](https://aws.amazon.com/cli/) 
