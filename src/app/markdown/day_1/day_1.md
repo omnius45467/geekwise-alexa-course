@@ -57,17 +57,6 @@ We will be installing a few dependencies
         
 Like it or not much of what we will be doing with lambda and the skills is dependant on grunt. If you prefer gulp write a `gulpfile.js` for it! I'll welcome a pull request.
 
-
-
-<!--#### Setting up Grunt-->
-
-<!--To setup Grunt we will use the following commands-->
-<!--`-->
-<!--npm install -g grunt grunt-cli-->
-<!--`-->
-
-<!--You may also want to-->
-
 #### Setting Up AWS on Your Vagrant Box
 In order to make our development process that much easier, we will need to setup the AWS Command Line tools on our computers. The following bullet points will walk you though the best way to do that.
 

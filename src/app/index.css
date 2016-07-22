@@ -7789,7 +7789,7 @@ a {
 }
 li a, p a {
   color:#009AD4;
-  line-height:4;
+  line-height:1;
 }
 ul, li, p, a{
   font-size:1em;
