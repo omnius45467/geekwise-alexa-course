@@ -1,10 +1,8 @@
-## The Headless Browser and a Little Bit of A.I.
+## The Headless Browser
 
 ### Objectives
 * We will be touching bases on C.R.U.D. operations with Node and simple json
 * Review Sessions, Requests, and Responses with Node
-* Introduce some basic concepts of A.I.
-
 
 ### Server Background
 

@@ -72,8 +72,8 @@ Like it or not much of what we will be doing with lambda and the skills is depen
 
 * The first thing we will need to do is install the latest version of `pip` this is a command line tool that will let us
  interact with the python scripts the same way we do with node modules.
-    * `sudo apt-get install pip`
-    * Once that is complete we will run `pip install awscli`
+    * `sudo apt-get install python-pip`
+    * Once that is complete we will run `sudo pip install awscli`
 * For more information check out the [AWS CLI guide](https://aws.amazon.com/cli/) 
 * [More Information](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
 
