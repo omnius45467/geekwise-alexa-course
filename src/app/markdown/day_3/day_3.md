@@ -351,8 +351,47 @@ You will need to select your `ARN` which is available from the AWS Lambda portal
 18. The next option on the screen is titled `Account Linking`. For now just click the `No` option.
 19. Now you can test in the next screen, or try it out on your device!
 
-
-
 ### Brainstorming
 * What functionality would you like to add to Alexa?
 * What tools will you need to make that possible?
+
+
+### The Next Steps
+
+I'd encourage you to practice the work flow above a few times. 
+
+What we need to do now is create a Alexa-Skills in the same location where you cloned the vagrant box repo. 
+This is where you will keep the skills that you are working on.
+
+Create another folder inside the Alexa-SKills folder and name it something related to the skills you want to make.
+
+Our workflow here will change slightly. Instead of using the web interface on AWS we will be pushing directly to 
+AWS form the command line.
+
+Write your skill following the same outline like the boilerpalte given from the Alexa AWS interface.
+
+#### Zipping the Skill
+
+Create a bash file called `zipper.sh` in your project directory, add the following ot the file
+```
+#!/bin/bash
+pushd skill
+zip -r ../skill.zip *
+popd
+```
+
+Save it and type the command `source ./zipper.sh`
+
+#### Deploy It
+```
+sudo aws lambda update-function-code --function-name Skill --zip-file fileb://skill.zip!
+```
+
+#### Pushing the file to S3
+
+```
+sudo aws s3 cp skill.zip s3://skill-bucket/
+sudo aws lambda update-function-code --function-name Skill --s3-bucket skill-bucket --s3-key skill.zip
+```
+
+

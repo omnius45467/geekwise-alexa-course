@@ -78,7 +78,29 @@ In order to make our development process that much easier, we will need to setup
 
 #### Node Primer
 
-If you haven't used node for a little while [this](http://www.nodebeginner.org) short primer might be useful
+If you haven't used node for a little while this short primer might be useful. 
+
+[http://www.nodebeginner.org](http://www.nodebeginner.org)
+
+##### Node and the CLI
+
+If you popped open a terminal window you are able to type in `node` in any window and get access to the CLI utility, 
+similar to Pythons IDLE.
+
+Try this, type in `node` to start the Node CLI and then enter 
+```
+function execute(someFunction, value) {
+  someFunction(value);
+}
+
+execute(function(word){ console.log(word) }, "Hello");
+
+```
+
+What do you get?
+
+
+##### The Node Server
 
 The biggest take away from this short primer should be standing up a small toy server.
 
@@ -95,6 +117,10 @@ Notice there are many built in functions that we can use to our advantage
 
 In many cases for what we are going to do the "Content-Type" will be handled by some 
 pieces of code that we will be using later.
+
+
+
+##### On Learing Javascript
 
 If this is your first time experimenting with javascript or nodejs I'd encourage you to have a look at 
 the [Code Academy Article on javascript](https://www.codecademy.com/learn/javascript)

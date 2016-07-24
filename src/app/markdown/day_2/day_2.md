@@ -91,7 +91,7 @@ app.listen(process.env.PORT || 8080);
 Something that has been very useful for me is [this guide](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-voice-design-handbook) 
 created by the alexa team.
 
-We will get into what `FillIntent`, `Partial Intent`, and `No Intent` actually mean a little later, but you can think of
+We will get into what `Fill Intent`, `Partial Intent`, and `No Intent` actually mean a little later, but you can think of
  these as the actuators that the user can have control over.
 
 ### Voice User Interface Basics
@@ -120,5 +120,7 @@ Ok now lets spin this up with the following code
 ```
 app.listen(3000, function() {
   console.log('listening on 3000')
-})
+});
 ```
+
+
