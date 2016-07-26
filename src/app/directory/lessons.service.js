@@ -19,14 +19,14 @@ function Lessons() {
       description: 'app/markdown/day_2/description_day_2.md',
       url: 'lesson/2',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 3,
-    //   title: 'Day #3 - Your First Skill',
-    //   md: 'app/markdown/day_3/day_3.md',
-    //   description: 'app/markdown/day_3/description_day_3.md',
-    //   url: 'lesson/3',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 3,
+      title: 'Day #3 - Your First Skill',
+      md: 'app/markdown/day_3/day_3.md',
+      description: 'app/markdown/day_3/description_day_3.md',
+      url: 'lesson/3',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 4,

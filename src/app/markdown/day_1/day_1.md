@@ -110,8 +110,9 @@ var http = require("http");
      response.writeHead(200, {"Content-Type": "text/plain"});
      response.write("Hello World");
      response.end();
-   }).listen(8888);
+   }).listen(8080);
 ```
+The website will be accessible through [http://localhost:8080](http://localhost:8080)
 
 Notice there are many built in functions that we can use to our advantage
 
