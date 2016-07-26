@@ -113,3 +113,5 @@ app.listen(8080, function(){
 	console.log('listening on 8080');
 });
 ```
+
+### If you can understand the basic concepts of this we are ready to move onto the next section of the course, actually creating a skill...
