@@ -10,7 +10,7 @@
 Yesterday we didn't touch bases on installing dependencies for the virtual environment. To install the dependencies besides the AWS CLI we will also need to install these manually.
 
 ```
-    npm install -g grunt grunt-cli express alexa-app alexa-app-server cylon --save
+    npm install -g grunt grunt-cli express alexa-app alexa-app-server cylon body-parser --save
 ```
 
 Once that is installed we are ready to continue on our journey down the road of the headless browser
