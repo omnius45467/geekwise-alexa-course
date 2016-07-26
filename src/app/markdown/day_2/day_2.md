@@ -4,6 +4,17 @@
 * We will be touching bases on C.R.U.D. operations with Node and simple json
 * Review Sessions, Requests, and Responses with Node
 
+
+### Installing Dependencies!
+
+Yesterday we didn't touch bases on installing dependencies for the virtual environment. To install the dependencies besides the AWS CLI we will also need to install these manually.
+
+```
+    npm install -g grunt grunt-cli express alexa-app alexa-app-server cylon --save
+```
+
+Once that is installed we are ready to continue on our journey down the road of the headless browser
+
 ### Server Background
 
 ![alt-text-1](assets/images/server.png "title-1")
@@ -56,25 +67,49 @@ We will get into what `Fill Intent`, `Partial Intent`, and `No Intent` actually 
 
 Designing voice interfaces is an art in and of itself. [This page](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-voice-design-best-practices) has some interesting details on some do's and don't.
 
-### Simple CRUD Example
+### Simple Server Example
 
-This is a simple skill that utilizes the command line and also the browser a bit to create, read, update, and delete.
+This is a simple skill that utilizes the command line, postman, and also the browser a bit.
 
 We will be sending strings to the server from the terminal, or git bash.
 
-To Start we need to install `express as a dependency` and then spin up a node server.
-```
-npm init 
-npm install express --save
-```
-
 Like we say above in another example the way we will start this server is by creating the following code.
+
 ```
 var express = require('express');
 var app = express();
-app.listen(3000, function() {
-  console.log('listening on 3000')
+app.listen(8080, function() {
+  console.log('listening on 8080');
 });
 ```
 
+We can take this super simple server a step further and give it the ability to not only accept get requests but post requests also
 
+```
+var express = require('express');
+var app = express();
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
+
+app.get('/', function(req, res) {
+	res.writeHead(200, {"Content-Type": "text/plain"});
+	res.write("Hello World");
+	res.end();
+	console.log('get request');
+});
+app.post('/post', function(req, res){
+	res.writeHead(200, {"Content-Type": "text/plain"});
+	res.write("this is a post request");
+	res.end();
+
+	var name = req.body.name;
+	console.log(name);
+});
+app.listen(8080, function(){
+	console.log('listening on 8080');
+});
+```

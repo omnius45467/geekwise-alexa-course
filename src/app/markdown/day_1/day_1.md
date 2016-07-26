@@ -121,7 +121,7 @@ pieces of code that we will be using later.
 
 
 
-##### On Learing Javascript
+##### On Learning Javascript
 
 If this is your first time experimenting with javascript or nodejs I'd encourage you to have a look at 
 the [Code Academy Article on javascript](https://www.codecademy.com/learn/javascript)
