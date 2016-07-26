@@ -62,7 +62,7 @@ This is a simple skill that utilizes the command line and also the browser a bit
 
 We will be sending strings to the server from the terminal, or git bash.
 
-To Start we need to install `express as a dependency` spin up a node server.
+To Start we need to install `express as a dependency` and then spin up a node server.
 ```
 npm init 
 npm install express --save
@@ -72,10 +72,6 @@ Like we say above in another example the way we will start this server is by cre
 ```
 var express = require('express');
 var app = express();
-```
-
-Ok now lets spin this up with the following code
-```
 app.listen(3000, function() {
   console.log('listening on 3000')
 });
