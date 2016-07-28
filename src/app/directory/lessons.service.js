@@ -27,22 +27,22 @@ function Lessons() {
       description: 'app/markdown/day_3/description_day_3.md',
       url: 'lesson/3',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 4,
-    //   title: 'Day #4 - Introduction to Alexa-App',
-    //   md: 'app/markdown/day_4/day_4.md',
-    //   description: 'app/markdown/day_4/description_day_4.md',
-    //   url: 'lesson/4',
-    //   logo: 'alexa.png'
-    // },
-    // {
-    //   id: 5,
-    //   title: 'Day #5 - Building A Custom Example',
-    //   md: 'app/markdown/day_5/day_5.md',
-    //   description: 'app/markdown/day_5/description_day_5.md',
-    //   url: 'lesson/5',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 4,
+      title: 'Day #4 - Introduction to Alexa-App',
+      md: 'app/markdown/day_4/day_4.md',
+      description: 'app/markdown/day_4/description_day_4.md',
+      url: 'lesson/4',
+      logo: 'alexa.png'
+    },
+    {
+      id: 5,
+      title: 'Day #5 - Building A Custom Example',
+      md: 'app/markdown/day_5/day_5.md',
+      description: 'app/markdown/day_5/description_day_5.md',
+      url: 'lesson/5',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 6,
