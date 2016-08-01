@@ -45,6 +45,10 @@ And install the library listed above.
 
 5. Let's create a couple different options for the users.
 
-6. Let's test it with out devices.
+6. Let's test it out, without the echo.
 
-7. How can we improve this?
+7. Let's move it into the skill.
+
+8. Let's try it out.
+ 
+8. How can we improve this?
