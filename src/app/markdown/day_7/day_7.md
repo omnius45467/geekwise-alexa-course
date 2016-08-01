@@ -54,8 +54,19 @@ interaction with the skill? If you feel like you might need to save user interac
 
 ### Does your skill require a external login?
 
-If you are trying to utilize information from an external webapp like, a solar system you might want to think about 
+If you are trying to utilize information from an external webapp like a solar system you might want to think about 
 constructing a login page that will authorize the user to sign in or create an account.
+
+Amazon has provided some documentation for how to link accounts. This is available [here](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/linking-an-alexa-user-with-a-user-in-your-system).
+Alexa Skills Account Linking is built on Oauth 2.0, this means that your server will have to be configured for Oauth login, in some way shape or form.
+For the most part this will be handled in the Amazon Developer Portal. Some of the main sections to keep in mind are...
+
+* Authorization URL - this is the URL where the user will enter their information.
+* Access Token URI - After the user has logged into the your system, behind the scenes they will be delivered a Access Token and a Refresh Token pair 
+* Redirect URL - After your user has logged in, they will automatically be redirected to the site listed as the Redirect URL. This will allow them to continue to use your skill. Once logged in, users will not have to sign in again, unless you specify that you need them to login.
+* Privacy Policy - You will have to link to your webapp/sites privacy policy to ensure that the user will have access to this information.
+
+If you wanted to build a Sound Cloud skill you will need to link to the Sound Cloud information and ensure that they have Oauth integrated.
 
 
 
