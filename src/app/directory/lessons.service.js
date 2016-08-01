@@ -51,14 +51,14 @@ function Lessons() {
       description: 'app/markdown/day_6/description_day_6.md',
       url: 'lesson/6',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 7,
-    //   title: 'Day #7 - Finishing Previous Example and Developing Student Ideas',
-    //   md: 'app/markdown/day_7/day_7.md',
-    //   description: 'app/markdown/day_7/description_day_7.md',
-    //   url: 'lesson/7',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 7,
+      title: 'Day #7 - Finishing Previous Example, Think About VUI, and Developing Student Ideas',
+      md: 'app/markdown/day_7/day_7.md',
+      description: 'app/markdown/day_7/description_day_7.md',
+      url: 'lesson/7',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 8,
