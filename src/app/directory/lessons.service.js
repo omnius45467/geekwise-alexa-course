@@ -59,14 +59,14 @@ function Lessons() {
       description: 'app/markdown/day_7/description_day_7.md',
       url: 'lesson/7',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 8,
-    //   title: 'Day #8 - Introduction to Alexa-App-Server',
-    //   md: 'app/markdown/day_8/day_8.md',
-    //   description: 'app/markdown/day_8/description_day_8.md',
-    //   url: 'lesson/8',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 8,
+      title: 'Day #8 - Introduction to Alexa-App-Server',
+      md: 'app/markdown/day_8/day_8.md',
+      description: 'app/markdown/day_8/description_day_8.md',
+      url: 'lesson/8',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 9,
