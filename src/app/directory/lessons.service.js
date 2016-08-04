@@ -67,14 +67,14 @@ function Lessons() {
       description: 'app/markdown/day_8/description_day_8.md',
       url: 'lesson/8',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 9,
-    //   title: 'Day #9 - Connecting to External Databases',
-    //   md: 'app/markdown/day_9/day_9.md',
-    //   description: 'app/markdown/day_9/description_day_9.md',
-    //   url: 'lesson/9',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 9,
+      title: 'Day #9 - Group Assignments',
+      md: 'app/markdown/day_9/day_9.md',
+      description: 'app/markdown/day_9/description_day_9.md',
+      url: 'lesson/9',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 10,
