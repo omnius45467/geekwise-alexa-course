@@ -1,2 +1,5 @@
-* Students will have the ability to develop their skills on their own with guidance 
+* Students will complete their skills from the previous lesson
+* Students will begin working on a new team assignment
+
+
 

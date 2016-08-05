@@ -75,14 +75,14 @@ function Lessons() {
       description: 'app/markdown/day_9/description_day_9.md',
       url: 'lesson/9',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 10,
-    //   title: 'Day #10 - Brainstorming and Development',
-    //   md: 'app/markdown/day_10/day_10.md',
-    //   description: 'app/markdown/day_10/description_day_10.md',
-    //   url: 'lesson/10',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 10,
+      title: 'Day #10 - Brainstorming and Team Project Development',
+      md: 'app/markdown/day_10/day_10.md',
+      description: 'app/markdown/day_10/description_day_10.md',
+      url: 'lesson/10',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 11,
