@@ -83,14 +83,14 @@ function Lessons() {
       description: 'app/markdown/day_10/description_day_10.md',
       url: 'lesson/10',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 11,
-    //   title: 'Day #11 - Connecting Alexa to a Small C.R.U.D. Server',
-    //   md: 'app/markdown/day_11/day_11.md',
-    //   description: 'app/markdown/day_11/description_day_11.md',
-    //   url: 'lesson/11',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 11,
+      title: 'Day #11 - Sharing Team Projects',
+      md: 'app/markdown/day_11/day_11.md',
+      description: 'app/markdown/day_11/description_day_11.md',
+      url: 'lesson/11',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 12,
