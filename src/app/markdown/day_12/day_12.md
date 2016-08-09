@@ -24,14 +24,17 @@ functions as a browser does in that it spits out the information that is sent to
  When it comes to databases we have a couple options that will allow us to either communicate with the database through an off site connection or we can interface with it directly.
 
 
-#### Express Server example
+#### Express Server Example
 
 [Express Server](https://github.com/sammyboy45467/Simple-Express)
 
-Clone the example and get it running on your local machine.
+Clone the example and get it running on your local machine. Remember to `npm install`. 
+If you are going to try and include more packages remember to add `--save` after the `npm install`.
 
 In this example I'm spinning up a simple server that will simple respond to 2 routes. 
 Routes are `endpoint` that can deliver results in the format such as html or json or xml depending on your use case. 
 These endpoints are what you visit when you go to a url such as your facebook page or a google search.
+
+Your job now is to create more routes and html markup. Look through the repo and figure out what you need to add to make this possible. 
 
 
