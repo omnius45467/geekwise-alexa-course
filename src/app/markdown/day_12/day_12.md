@@ -54,3 +54,13 @@ database, simply scroll down to the bottom and you will see options for a free s
 
 You can include this database into your express server by introducing [Mongoose](https://www.npmjs.com/package/mongoose), 
 Mongoose is just one option for connecting a mongoDB to your system.
+
+### Exploring Databases with Alexa
+
+We will be spending some time in the next class exploring connecting the database to our Alexa Skills but a great place to start is this example
+
+[Alexa Databases](https://github.com/sammyboy45467/Bitwise-Skill)
+
+You can set it up just like you did any other skill.
+
+## Experiment Break Things and Come Back with Questions!
