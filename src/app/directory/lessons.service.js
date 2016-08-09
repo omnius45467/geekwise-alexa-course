@@ -91,14 +91,14 @@ function Lessons() {
       description: 'app/markdown/day_11/description_day_11.md',
       url: 'lesson/11',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 12,
-    //   title: 'Day #12 - Introduction to the IoT',
-    //   md: 'app/markdown/day_12/day_12.md',
-    //   description: 'app/markdown/day_12/description_day_12.md',
-    //   url: 'lesson/12',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 12,
+      title: 'Day #12 - Introduction to Servers and Databases with Alexa',
+      md: 'app/markdown/day_12/day_12.md',
+      description: 'app/markdown/day_12/description_day_12.md',
+      url: 'lesson/12',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 13,
