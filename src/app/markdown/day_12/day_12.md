@@ -38,3 +38,19 @@ These endpoints are what you visit when you go to a url such as your facebook pa
 Your job now is to create more routes and html markup. Look through the repo and figure out what you need to add to make this possible. 
 
 
+### Databases
+
+Sometimes as a developer you don't have to have to hold everything that your dealing with in system memory. 
+When we are presented with problems like this we find it best to offload some of this information to a `database`.
+When we offload some of this information to a database we can use it later. It is also possible to save things to a database and update them or even delete them.
+
+For the purposes of this class we will connect our systems and skills to [MLab](https://mlab.com/home). 
+
+Go ahead and create an account. MLab's databases are special. They are written in the same format that we are using in 
+our Alexa skills so things are relatively easy to integrate. 
+
+You can step through the process of creating a database. For what we are doing there is no need to sign up for a paid 
+database, simply scroll down to the bottom and you will see options for a free small database.
+
+You can include this database into your express server by introducing [Mongoose](https://www.npmjs.com/package/mongoose), 
+Mongoose is just one option for connecting a mongoDB to your system.
