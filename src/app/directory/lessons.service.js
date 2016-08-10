@@ -99,14 +99,14 @@ function Lessons() {
       description: 'app/markdown/day_12/description_day_12.md',
       url: 'lesson/12',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 13,
-    //   title: 'Day #13 - Skynet aka Cylonjs',
-    //   md: 'app/markdown/day_13/day_13.md',
-    //   description: 'app/markdown/day_13/description_day_13.md',
-    //   url: 'lesson/13',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 13,
+      title: 'Day #13 - Arduino, Firmata, and Skynet aka Cylonjs',
+      md: 'app/markdown/day_13/day_13.md',
+      description: 'app/markdown/day_13/description_day_13.md',
+      url: 'lesson/13',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 14,
