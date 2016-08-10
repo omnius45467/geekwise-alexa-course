@@ -108,3 +108,6 @@ var robot = cylon.robot({
 robot.start(); //this starts the device
 ```
 
+### A more interesting example
+
+[This is how you think outside the browser](https://github.com/sammyboy45467/cylon-express-server)
