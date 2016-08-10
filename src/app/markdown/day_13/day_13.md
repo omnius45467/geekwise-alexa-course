@@ -35,6 +35,7 @@ This is a Node Library meaning that we can use it in a traditional express serve
 To install the cylon packages there are a couple that you will need to install.
 
 ``` 
+npm install cylon --save
 npm install cylon-firmata --save
 npm install cylon-gpio --save
 npm install cylon-i2c --save
@@ -44,3 +45,66 @@ npm install cylon-api-http --save
 Additionally Cylonjs has a built in API that we can use to interact with our Alexa Skills. 
 You will *not* be able to include these directly into your Alexa Skills, you will have to 
 include them on a server and have the Alexa Skill make a `GET` request to your node express server.
+
+### How does Cylonjs work?
+
+I know most humans hate reading but for this it is really important. There is some nuance to working with Cylonjs and it is explained in the documentation.
+When developing for IoT with Cylonjs there is an option to use a hardcoded snippet that will run the same block of code over and over, 
+or you can connect to an API that will allow you to access user defined functions.
+
+#### Basic example for connecting to and running a block of code once
+
+```
+
+var Cylon = require('cylon');
+   
+   Cylon.robot({
+     connections: {
+       arduino: { adaptor: 'firmata', port: '/dev/ttyACM0' }
+     },
+   
+     devices: {
+       led: { driver: 'led', pin: 13 }
+     },
+   
+     work: function(my) {
+       every((1).second(), my.led.toggle);
+     }
+   }).start();
+   
+```
+
+#### Basic example for an api
+
+```
+cylon.api({
+    host: '127.0.0.1', // this means it will be served locally
+    post: '4040',
+    ssl: false,
+    auth: false
+});
+
+var robot = cylon.robot({
+    name: 'omnius',
+    connections: {
+        arduino: {adaptor: 'firmata', port: '/dev/cu.usbmodem1421'} // this port is mac specific
+    },
+    work: function () {
+
+    },
+    commands: function () {
+        return {
+            on: this.On,
+            off: this.Off
+        }
+    },
+    On: function () {
+        //specific actions to take
+    },
+    Off: function () {
+        //specific actions to take
+    }
+});
+robot.start(); //this starts the device
+```
+
