@@ -35,10 +35,10 @@ This is a Node Library meaning that we can use it in a traditional express serve
 To install the cylon packages there are a couple that you will need to install.
 
 ``` 
-npm install cylon-firmata 
-npm install cylon-gpio 
-npm install cylon-i2c
-npm install cylon-api-http
+npm install cylon-firmata --save
+npm install cylon-gpio --save
+npm install cylon-i2c --save
+npm install cylon-api-http --save
 ```
 
 Additionally Cylonjs has a built in API that we can use to interact with our Alexa Skills. 
