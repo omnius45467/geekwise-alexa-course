@@ -107,14 +107,14 @@ function Lessons() {
       description: 'app/markdown/day_13/description_day_13.md',
       url: 'lesson/13',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 14,
-    //   title: 'Day #14 - Linking Accounts',
-    //   md: 'app/markdown/day_14/day_14.md',
-    //   description: 'app/markdown/day_14/description_day_14.md',
-    //   url: 'lesson/14',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 14,
+      title: 'Day #14 - The Deep End',
+      md: 'app/markdown/day_14/day_14.md',
+      description: 'app/markdown/day_14/description_day_14.md',
+      url: 'lesson/14',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 15,

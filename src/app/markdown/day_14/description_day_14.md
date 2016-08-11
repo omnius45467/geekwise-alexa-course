@@ -1,5 +1,5 @@
-* Linking to external accounts using response.linkAccount()
-* Another example to be coded through with the students by the instructor
-* Evernote Example(Captains Log)
+* Stand Up Your Own Express Server 
+* Tie in your own Database
+* Connect Your Express Server to a Skill
 
 
