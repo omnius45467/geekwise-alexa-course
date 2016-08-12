@@ -115,14 +115,14 @@ function Lessons() {
       description: 'app/markdown/day_14/description_day_14.md',
       url: 'lesson/14',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 15,
-    //   title: 'Day #15 - Finishing Examples',
-    //   md: 'app/markdown/day_15/day_15.md',
-    //   description: 'app/markdown/day_15/description_day_15.md',
-    //   url: 'lesson/15',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 15,
+      title: 'Day #15 - Databases and Experimentation',
+      md: 'app/markdown/day_15/day_15.md',
+      description: 'app/markdown/day_15/description_day_15.md',
+      url: 'lesson/15',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 16,
