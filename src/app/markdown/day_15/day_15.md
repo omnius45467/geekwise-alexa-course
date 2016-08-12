@@ -30,7 +30,7 @@ mongoose.Promise = Promise;
 mongoose.connect(process.env.MLAB); // this will change for the specific database I'm connecting to
 
 
-//this schema is mainly required for creating records, but I usually include it anyway jsut to be safe
+//this schema is mainly required for creating records, but I usually include it anyway just to be safe
 var Company = new Schema({
     utteranceName:{
         type: String,
