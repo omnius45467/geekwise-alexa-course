@@ -99,3 +99,7 @@ if(request.session('name') != '' && request.session('subject') != '' && request.
 		response.send();
 }
 ```
+
+### If you want to see the full example...
+
+[Madlib Skill](https://github.com/sammyboy45467/madlib-skill)
