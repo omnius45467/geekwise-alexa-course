@@ -72,3 +72,4 @@ function getCompany(company) {
 var c = 'bit wise'; // in this case I will be searching for this record in my database
 getCompany(c);
 ```
+

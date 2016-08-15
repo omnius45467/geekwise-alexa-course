@@ -123,14 +123,14 @@ function Lessons() {
       description: 'app/markdown/day_15/description_day_15.md',
       url: 'lesson/15',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 16,
-    //   title: 'Day #16 - Possibilities with Python',
-    //   md: 'app/markdown/day_16/day_16.md',
-    //   description: 'app/markdown/day_16/description_day_16.md',
-    //   url: 'lesson/16',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 16,
+      title: 'Day #16 - Sessions as Assets',
+      md: 'app/markdown/day_16/day_16.md',
+      description: 'app/markdown/day_16/description_day_16.md',
+      url: 'lesson/16',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 17,

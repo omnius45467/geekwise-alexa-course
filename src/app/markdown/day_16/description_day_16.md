@@ -1,4 +1,5 @@
-* Examples of what Python Skills look like
-* Assisted coding through a Python example
+* How to use sessions to your advantage
+* Temporarily store data between sessions
+* 
 
 
