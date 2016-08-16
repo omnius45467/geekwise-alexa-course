@@ -131,14 +131,14 @@ function Lessons() {
       description: 'app/markdown/day_16/description_day_16.md',
       url: 'lesson/16',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 17,
-    //   title: 'Day #17 - Day of Development',
-    //   md: 'app/markdown/day_17/day_17.md',
-    //   description: 'app/markdown/day_17/description_day_17.md',
-    //   url: 'lesson/17',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 17,
+      title: 'Day #17 - Day of Development',
+      md: 'app/markdown/day_17/day_17.md',
+      description: 'app/markdown/day_17/description_day_17.md',
+      url: 'lesson/17',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 18,
