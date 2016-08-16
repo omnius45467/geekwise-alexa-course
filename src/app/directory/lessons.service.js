@@ -134,7 +134,7 @@ function Lessons() {
     },
     {
       id: 17,
-      title: 'Day #17 - Day of Development',
+      title: 'Day #17 - Review',
       md: 'app/markdown/day_17/day_17.md',
       description: 'app/markdown/day_17/description_day_17.md',
       url: 'lesson/17',
