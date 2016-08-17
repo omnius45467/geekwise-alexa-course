@@ -1,2 +1,4 @@
-* After show and tell there will be an open discussion to find out the different skills strengths and weaknesses.
+* Discuss previous days assignment
+* Brainstorm
+* Develop your ideas, and ask questions
 

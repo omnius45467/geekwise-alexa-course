@@ -139,14 +139,14 @@ function Lessons() {
       description: 'app/markdown/day_17/description_day_17.md',
       url: 'lesson/17',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 18,
-    //   title: 'Day #18 - Show and Tell',
-    //   md: 'app/markdown/day_18/day_18.md',
-    //   description: 'app/markdown/day_18/description_day_18.md',
-    //   url: 'lesson/18',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 18,
+      title: 'Day #18 - Day Of Development',
+      md: 'app/markdown/day_18/day_18.md',
+      description: 'app/markdown/day_18/description_day_18.md',
+      url: 'lesson/18',
+      logo: 'alexa.png'
     // },
     // {
     //   id: 19,
