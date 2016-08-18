@@ -147,22 +147,22 @@ function Lessons() {
       description: 'app/markdown/day_18/description_day_18.md',
       url: 'lesson/18',
       logo: 'alexa.png'
-    // },
-    // {
-    //   id: 19,
-    //   title: 'Day #19 - Further Development',
-    //   md: 'app/markdown/day_19/day_19.md',
-    //   description: 'app/markdown/day_19/description_day_19.md',
-    //   url: 'lesson/19',
-    //   logo: 'alexa.png'
-    // },
-    // {
-    //   id: 20,
-    //   title: 'Day #20 - Last Day',
-    //   md: 'app/markdown/day_20/day_20.md',
-    //   description: 'app/markdown/day_20/description_day_20.md',
-    //   url: 'lesson/20',
-    //   logo: 'alexa.png'
+    },
+    {
+      id: 19,
+      title: 'Day #19 - Further Development',
+      md: 'app/markdown/day_19/day_19.md',
+      description: 'app/markdown/day_19/description_day_19.md',
+      url: 'lesson/19',
+      logo: 'alexa.png'
+    },
+    {
+      id: 20,
+      title: 'Day #20 - Last Day',
+      md: 'app/markdown/day_20/day_20.md',
+      description: 'app/markdown/day_20/description_day_20.md',
+      url: 'lesson/20',
+      logo: 'alexa.png'
     }
   ];
 }

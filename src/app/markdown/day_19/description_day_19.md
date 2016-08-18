@@ -1,2 +1,2 @@
-* Skill review and student question answer session
+* Continue Skill Development
 
